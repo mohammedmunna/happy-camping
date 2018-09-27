@@ -18,7 +18,9 @@ var commentRoutes    = require("./routes/comments");
 var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes       = require("./routes/index");
 
-mongoose.connect("mongodb://localhost:27017/happy_camping", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost:27017/happy_camping", { useNewUrlParser: true });
+mongoose.connect("mongodb://mohammedmunna:munnal1234@ds115523.mlab.com:15523/happycamping", { useNewUrlParser: true });
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
