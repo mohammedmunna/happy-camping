@@ -28,6 +28,9 @@ app.use(methodOverride("_method"));
 app.use(flash());
 // seedDB(); //seed the database
 
+// for "Time Since"
+app.locals.moment = require("moment");
+
 // PASSPORT CONFIGURATION
 app.use(expressSession({
     secret: "This line will be used for encoding and decoding",
